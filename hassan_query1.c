@@ -32,6 +32,7 @@ int main(){ //{} => scope operator
 		}
 	}
 	// tip: if u want a talyored reponse, then use nested if statements
+	printf("\n");
 }
 
 // remaining: tenary operator
@@ -56,3 +57,4 @@ void soln(){// function
 // 
 
 // gcc -o hassan_query1 hassan_query1.c
+// ./hassan_query1
