@@ -31,7 +31,7 @@ int main(){ //{} => scope operator
         		printf("Invalid ");
 		}
 	}
-	// tip: if u want a talyored reponse, then use nested if
+	// tip: if u want a talyored reponse, then use nested if statements
 }
 
 // remaining: tenary operator
