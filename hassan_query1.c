@@ -2,7 +2,7 @@
 
 int main(){ //{} => scope operator
 	int a,c,b,x; // 4 bytes
-	//  1 3 5
+	//  1 3 5 11// adrresses may or may not be consecutive/contiguous
 	
 	printf("Enter Principal must between 100 to 1000000 : ");
 	scanf("%d", & a); 
