@@ -33,6 +33,7 @@ int main(){ //{} => scope operator
 	}
 	// tip: if u want a talyored reponse, then use nested if statements
 	printf("\n");
+	system("pause");
 }
 
 // remaining: tenary operator
