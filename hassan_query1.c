@@ -18,17 +18,17 @@ int main(){ //{} => scope operator
 		// !(a >=100 && a<=1000000) = a <100 || a>1000000 [-ve response]
     	
     	if (b>=5 && b<=10){ // nested if
-			printf("Enter Time period must between 1 to 10 years : ");
+			printf("  Enter Time period must between 1 to 10 years : ");
 			scanf("%d", & c);
 			// inclusivity & exclusivity shows use of = sign in statements
 			// e.g. b/w (TARGETS inclusivity): b>=5 && b=<10
 			
 			if ( c>=1 && c<=10){ //dependence=> independant: nested above if, dependant: outer if
 				x = (a * b * c)/100; // Simple Interest
-        		printf(" Simple interest is %d", x);
+        		printf("   Simple interest is %d", x);
 			}
     		else
-        		printf("Invalid ");
+        		printf("Invalid "); // better approach for placing false response?
 		}
 	}
 	// tip: if u want a talyored reponse, then use nested if statements
