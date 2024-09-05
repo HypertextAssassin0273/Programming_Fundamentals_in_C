@@ -55,3 +55,4 @@ void soln(){// function
 // student types
 // 
 
+// gcc -o hassan_query1 hassan_query1.c
