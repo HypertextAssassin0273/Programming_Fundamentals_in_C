@@ -19,5 +19,10 @@ int main()
   printf(c >= 1 && c <= 10 ? "Simple interest is %d" : "Invalid", (a * b * c) / 100);
 }
 
+
+// next topics: scopes, nested if (with tenary operator), student types,
+// future topics: data-types & their memory allocation/sizes, array basics
+
+
 // 14 js
 //  gcc -o tenary_test tenary_test.cpp
