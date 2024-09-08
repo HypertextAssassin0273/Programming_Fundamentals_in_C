@@ -1,15 +1,16 @@
 #include<stdio.h> // c library headers
 
 int main(){ //{} => scope operator
-	int a,c,b,x; // 4 bytes
-	//  1 3 5 11// adrresses may or may not be consecutive/contiguous
-	
-	printf("Enter Principal must between 100 to 1000000 : ");
-	scanf("%d", & a); 
-	
-	// additional topic:
+	int a, b, c, // 4 bytes each, total 16 bytes,
+		x=0;	 // always initialize variables that perform arithmetic operations
+	// 00, 08, 05, 09 => addresses may or may not be contiguous (depends on compiler/system-architecture)
+
+	// additional topic (arrays has contiguous memory blocks):
 	//a[3]; //x09100 x09104 x09108 [4 diff], total size = 4*3 = 12 bytes
 	// a[0] = x09100, a[2] = x09108,   -> n-1
+	
+	printf("Enter Principal must between 100 to 1000000 : ");
+	scanf("%d", & a);
 	
 	if (a >=100 && a<=1000000){ // operator precedence: () || >= <=, +ve response, translation of b/w statement
 		printf(" Enter Rate of Interest between 5 percent to 10 percent : ");
@@ -27,35 +28,20 @@ int main(){ //{} => scope operator
 				x = (a * b * c)/100; // Simple Interest
         		printf("   Simple interest is %d", x);
 			}
-    		else
-        		printf("Invalid "); // better approach for placing false response?
+    		// else
+        	// 	printf("Invalid "); // not a good place to put 'false response' for given problem
 		}
-	}
-	// tip: if u want a talyored reponse, then use nested if statements
-	printf("\n");
-	system("pause");
-}
+	}// note: nesting 'if' statements in the above order can be deemed as 'systematic taylored reponse'
 
-// remaining: tenary operator
-// task: re-construct the above problem with the help of tenary operator
-
-// hint: learn atomic or individual transformation of each if-else statement, then combine the whole logic/code
-//if{
-//	if{
-//		if{}
-//		else{}
-//		}
-//	}
-//}
-
-void soln(){// function
+	if (!x) // flag statement, means: if x is 0, then false
+		printf("Invalid "); // this is the right place to show 'false response' only when all conditions aren't met
 	
+	printf("\n"); // new line
+	system("pause"); // pauses the console (necessary when directly running .exe file as it can stop console from closing)
 }
 
+// next topics: truthy/falsy values (for conditional statements), tenary operator usage in nested if statements
 
-// next topic: scopes
-// student types
-// 
 
 // gcc -o hassan_query1 hassan_query1.c
 // ./hassan_query1
